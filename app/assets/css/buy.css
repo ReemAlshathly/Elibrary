@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+:root{
+    --circle-defualt: rgb(194, 161, 161);
+    --circle-active: rgb(196 37 14);
+}
+
+.container {
+   
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20vh; */
+    position: relative;
+    /* height: 10vh; */
+    /* background-color: #333; */
+    z-index: -2;
+    /* margin-left: 20vw;*/
+}
+
+.container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.bt-div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+   
+}
+.progress::before {
+    content: '';
+    background-color: #333;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 2px;
+    z-index: -1;
+}
+
+
+/* .circle::before {
+    content: '';
+    background-color: turquoise;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+} */
+
+.active{
+    background-color: var(--circle-active) !important;
+    border-color: var(--circle-active) !important;
+    color: white;
+}
+
+.progress {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    /* z-index: ; */
+}
+.progress1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    /* z-index: ; */
+}
+
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249 250 252);
+}
+
+
+.sli-book{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid beige;
+    justify-content: center;
+    align-content: center;
+   
+}
+.bt-book{
+    background-color: rgb(196 37 14);
+    color: #fff;
+    width: 10vw;
+    border: none;
+    height: 7vh;
+    /* font-size: 1em; */
+    /* margin: 0.3em; */
+    border-radius: 10%;
+    margin: 2%;
+}
+   
+
+.bt-book2{
+background-color: rgb(201, 13, 13);
+    color: #fff;
+    width: 10em;
+    border: none;
+    height: 7vh;
+    font-size: 1em;
+    margin: 0.3em;
+}
+/* The Modal (background) */
+.modal-basket {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+   /* z-index: 1; /* Sit on top */
+   margin-right: 40%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+   background-color: #f9fafc;
+   border-radius: 20%;
+  }
+  .modal-basket2 {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+    margin-right: 10%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+   background-color: #f9fafc; 
+   border-radius: 20%; }
+  .modal-basket3 {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+   /* z-index: 1; /* Sit on top */
+   margin-left: 20%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+   background-color: #f9fafc;
+   border-radius: 20%;}
+  .modal-basket4 {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+   /* z-index: 1; /* Sit on top */
+   margin-left: 40%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+   background-color: #f9fafc;  
+   border-radius: 20%;}
+  
+  /* Modal Content/Box */
+  .modal-content-basket {
+   background-color: #f9fafc;    margin: 1% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid rgb(252, 247, 246);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .form>input{
+   
+
+width: 100%;
+height: 4em;
+direction: rtl;
+padding: 5%;
+font-size: 80%;
+
+  }
+  
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .form{
+      align-content: center;
+  }
+  .form1{
+      display: flex;
+      flex-direction: row;
+      margin-left: 20%;
+      margin: 1em;
+  }
+  .first-form{
+    display: flex;
+    flex-direction: row;
+  }
+  .final{
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+  }
+  .final>h1{
+    color: red;
+    direction: rtl;
+    margin:1em;
+    font-size: 1.5em;
+  }
+  .modal-basket5{
+      padding: 1em;
+      display: none; /* Hidden by default */
+      /*position: fixed; /* Stay in place */
+     /* z-index: 1; /* Sit on top */
+     
+      width: 70%; /* Full width */
+      height: 60%; /* Full height */
+     /* overflow: auto; /* Enable scroll if needed */
+     background-color: #f9fafc;
+     border-radius: 20%; }
+      .head-buy{
+          align-content: center;
+          justify-content: center;
+          width: 100%;
+      }
+      .head-buy>h1{
+          color: red;
+         text-align: center;
+      }
