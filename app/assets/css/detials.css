@@ -1,0 +1,368 @@
+
+.deteals-model{
+    background: ;
+    
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+.imshow{
+
+    border-radius: 1em;
+    margin: .1em;
+}
+.show-now-detials{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin-left: 2%;
+    margin-top: 1em;
+
+}
+.show-now-detials>div{
+    width: 80%;
+    height: auto;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    box-shadow: #f9fafc;
+   
+   
+
+}
+.div-note{
+    width: 80%;
+    height: auto;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    box-shadow: #f9fafc;
+    align-items: center;
+    box-shadow: 0 10px 10px #999;
+}
+.card{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    
+   padding-right: 2%;
+    
+}
+
+.card-sec1{
+    direction: rtl;
+}
+.card a{
+    color: rgb(54, 113, 202);
+    text-decoration: none;
+}
+.card-sec1>h2{
+    color: rgb(201, 13, 13);
+}
+.card>div>sub{
+    color: rgb(182, 179, 179);
+}
+.card-leftsec{
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+    color: rgb(153, 153, 155);
+    font-weight: 900;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    width: ;
+}
+.stars>div{
+    display: flex;
+    flex-direction: row;
+}
+.format{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.format-left{
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+}
+.format-left h2{
+    color: rgb(201, 13, 13);
+
+    
+}
+.format-left>div>sub{
+    color:rgb(161, 161, 161);
+}
+.format-right{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    width: 100%;
+}
+.format-right div{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    margin-top: 10%;
+}
+.format-right label{
+    margin-right: 2%;
+}
+.book-show-head{
+
+    width: 80%;
+    height: auto;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    box-shadow: #f9fafc;
+    align-items: center;
+    box-shadow: 0 10px 10px #999;
+}
+.navbar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    direction: rtl;
+    padding: 2%;
+    text-decoration: none;
+    right: 0%;
+}
+.navbar a{
+    direction: rtl;
+    padding: 2%;
+    text-decoration: none;
+    color: rgb(54, 113, 202);
+}
+.basket-detials-note{
+    width: 90%;
+    background: rgb(248, 242, 245);
+    height: 20%;
+    border-right:3px solid yellow;
+    padding-right:  2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 4%;
+    font-size: .8em;
+    direction: rtl;
+    
+    margin-top: 5%;
+}
+.basket-detials-note a{
+    text-decoration: none;
+    margin-top: 9px;
+}
+.deatials-basket-btn{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    width: 100%;
+}
+.deatials-basket-btn button{
+    width: 80%;
+    height: 5vh;
+    margin: .5em;
+    align-items: center;
+    background-color: rgb(201, 13, 13);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+}
+.deatials-basket-btn a{
+    text-decoration: none;
+    color: #fff;
+  padding-right: 8%;}
+  .deatials-basket-btn input{
+width: 15%;
+margin-right: 2%;
+height: 5vh;
+margin-top: .5em;
+font-size: 20px;
+  }
+  .more{
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      width: 90%;
+      direction: rtl;
+  }
+  .more div{
+      display: flex;
+      flex-direction: row;
+      margin-top: 3%;
+      margin-right: 2%;
+  }
+  .more p{
+     
+  }
+  .share{
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%;
+     align-items: center;
+     border-top: 1px solid #5a5959;
+      justify-content: center;
+      width: 90%;
+  }
+  .share div{
+    display: flex;
+    flex-direction: row;
+    margin: 4%;
+    width: 40%;
+    padding: 2%;
+  }
+.share >div{
+    box-shadow: 1px 1px 9px 1px rgb(201, 196, 196);
+} 
+.more-detials{
+    display: flex;
+    flex-direction: column;
+   
+    width: 90%;
+    margin: 2%;
+}
+.short-det{
+    background: rgb(243, 240, 240);
+    width: 100%;
+    direction: rtl;
+    height: 50%;
+    padding: 2%;
+    border-top: 2px solid #ccc8c8;
+    border-bottom: 2px solid #ccc8c8;
+    margin: 2%;
+}
+.more-detials-sec1{
+    direction: rtl;
+    border-bottom:.5px solid rgb(182, 182, 182) ;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    border-bottom:.5px solid rgb(182, 182, 182);
+    margin-bottom: 1%;
+}
+.data >div{
+    margin: 2%;
+}
+.p-right{
+    color: rgb(82, 81, 81);
+}
+.p-left{
+font-weight: 800;
+color: #5a5959;
+}
+.more-detials-sec2{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    border-bottom: 1px solid #5a5959;
+    border-radius: 2%;
+}
+.more-detials-sec2>div{
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+}
+.more-detials-sec2>div>button{
+    background: blue;
+    color: #fff;
+    width: 10%;
+    border: none;
+    margin-right: 2%;
+    height: 5vh;
+    box-shadow: 1px 1px 9px 1px rgb(161, 160, 206);
+    border-radius: 6%;
+    font-size: 1.3em;
+}
+.Rev{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2%;
+}
+.Rev >div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+.re-data{
+    background: rgb(239, 242, 243);
+    width: 100%;
+    padding-right: 2%;
+}
+.last{
+    width: 97%;
+    border-top:1px solid #5a5959;
+}
+.last-header{
+    font-weight: 900;
+    direction: rtl;
+    color: #5a5959;
+    padding-top: 2%;
+}
+.last-card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    direction: rtl;
+    margin: 2%;
+   justify-content: center;
+    
+}
+.last-card>div{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 9px 1px rgb(161, 160, 206);
+    padding: 2%;
+    margin: 2%;
+
+}
+img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+    
+@media (max-width: 500px){
+.navbar {
+    display: flex;
+    position: relative;
+    flex-direction: column;}
+
+    .show-now-detials {
+        display: flex;
+        flex-direction: column;
+}
+.last-card {
+    display: flex;
+    flex-direction: column;}
+}
+@media (max-width: 700px){
+    
+    
+        .show-now-detials {
+            display: flex;
+            flex-direction: column;
+    }
+    .last-card {
+        display: flex;
+        flex-direction: column;}
+    }

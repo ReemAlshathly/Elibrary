@@ -1,0 +1,145 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.slider{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+        height: 50vh;
+       margin-bottom: 10em;
+       
+       
+    }
+.model{
+    background: rgb(248, 243, 243);
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+   
+    
+}.model-content{
+    width: 60%;
+    height: 70vh;
+    background-color: #fff;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 20%;
+   position: absolute;
+   visibility: hidden;
+}
+.model-content >h2{
+margin-left: 45%;
+padding-top: 2em;
+
+}
+.model-content > form{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(223, 217, 228);
+    width: 60%;
+    margin-left: 20%;
+    position: relative;
+
+}
+
+.model-content > form > input{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    background: rgb(215, 222, 223);
+    border:none;
+    width: 80%;
+   height: 10vh;
+   margin: .5em;
+direction: rtl;
+padding: 1em;
+box-shadow: rgb(223, 217, 228);
+
+}
+.submit{
+    background:rgb(192, 15, 15);
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+
+.model-content2{
+    width: 60%;
+    height: auto;
+    background-color: #fff;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 20%;
+    position: absolute;
+   visibility: hidden;
+   z-index: 100;
+   
+}
+.model-content2 >h2{
+margin-left: 45%;
+padding-top: 2em;
+
+}
+.model-content2 > form{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(223, 217, 228);
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+.model-content2 > form > input{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+  background-color: rgb(231, 227, 227);
+    border:none;
+    width: 80%;
+   height: 10vh;
+   margin: .5em;
+direction: rtl;
+padding: 1em;
+box-shadow: rgb(223, 217, 228);
+
+}
+.model-img{
+    background: rgb(248, 243, 243);
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    margin-left: 4em;
+    top: 0;
+    justify-content: center;
+    align-items: center;}
+
+    .login-section{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        margin-left:  2%;
+        margin-top: 1em;
+        z-index: 100;
+    }

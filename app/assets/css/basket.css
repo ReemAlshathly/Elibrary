@@ -1,0 +1,220 @@
+*{
+    padding: 0px;
+}
+.basket{
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+    
+}
+.basket>div{
+display: flex;
+flex-direction: column;
+height: 55vh;
+
+}
+.sec2-basket{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    border: 1px solid rgb(233, 226, 226);
+    direction:rtl;
+    font-size: 30%;
+    padding: 1em;
+    box-shadow: 0 10px 10px rgb(241 236 240);
+}
+
+.sec-row{
+display: flex;
+flex-direction: row;
+margin: 1em;
+font-size: 20%;
+height: auto;
+padding: 7em;
+}
+.basket-heser{
+font-size: 12em;
+}
+.shopping{
+    background-color: rgb(248, 245, 248);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-right: 5em;
+    margin-left: 10em;
+    box-shadow: 0 10px 10px rgb(241 236 240);
+    
+    margin-bottom: 20%;
+}
+.basket-note{
+margin: 1em;
+    background: rgb(253 250 248);
+    width: 100%;
+    height: 50%;
+    border-right:3px solid yellow;
+    padding-right:  3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-radius: 10%;
+    font-size: 1em;
+}
+.delet{
+    border-top: 1px solid #000;
+    
+    margin-top: 3em;
+   direction:rtl;
+}
+.delet>p{
+
+   
+}
+.shop-sec1{
+    display: flex;
+    flex-direction: row;
+   
+
+}
+.shop-sec1>div{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    direction: rtl;
+    
+}
+.shop-sec1>div>p{
+
+    
+    margin: 0px;
+}
+.shop-sec2{
+    display: flex;
+    flex-direction: column;
+}
+.shop-sec2>div{
+margin-top: 4em;
+justify-content: center;
+align-items: center;
+}
+
+.shop-sec2>input{
+   
+}
+.shop-sec2>button{
+
+    width: 90%;
+    height: 7vh;
+    margin: 1em;
+    align-items: center;
+    background-color: rgb(201, 13, 13);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+}
+.shop-sec2>button>a{
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    font-style: normal;
+}
+.sec-row-icon>img{
+
+    width: 20px;
+    height: 50px;
+    margin: 5em;
+    padding: 5em;
+}
+.input-basket{
+    width: 20%;
+    height: 90%;
+    margin: .5em;
+    margin-right: 0em;
+}
+.price{
+    width: 30%;
+    height: 30%;
+    margin-top: 3em;
+    margin-left: 1em;
+    direction: ltr;
+    
+}
+.det{
+    font-size: 1em;
+    color: rgb(61, 63, 63);
+    font-style:;
+    font-weight: 700;
+}
+.det2{
+    font-size: 1.5em;
+    color: rgb(236, 13, 13);
+    font-style:;
+    font-weight: 700;
+}
+.det3{
+    font-size: 1em;
+    color: rgb(117 229 146);
+    font-style:;
+    font-weight: 700;
+}
+
+/* The Modal (background) */
+.modal-basket {
+   
+   
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-basket {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .count{
+      display: flex;
+      flex-direction: row;
+      
+  }
+  .header-bask{
+      display: flex;
+      flex-direction: row;
+      direction: rtl;
+      margin-right: 3em;
+  }
+  @media (max-width: 500px){
+  .basket {
+    display: flex;
+    flex-direction: column;}
+
+    .basket>div {
+        display: flex;
+        flex-direction: column;
+        
+    height: auto;
+    width: 100%;
+}
+.shopping {
+    
+    width: 100%;
+    
+    
+    margin-left: 0em;
+}
+  }
