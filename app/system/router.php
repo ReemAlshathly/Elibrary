@@ -1,70 +1,69 @@
 <?php 
+namespace coding\app\system;
+class Router{
 
-namespace App\System;
-class Router
-{
-    private $handlers = [];
-    private $notFoundHandler;
-
-    const M_POST = 'POST';
-    const M_GET  = 'GET';
-
-
-    public function get(string $path, $handler)
+    public $request;
+    public $response;
+    public function __construct($request)
     {
-        $this->addHandler(self::M_GET, $path, $handler);
+        $this->request=$request;
+        
     }
 
-    public function post(string $path, $handler)
-    {
-        $this->addHandler(self::M_POST, $path, $handler);
+
+
+    protected  static $routes=array(); 
+
+    public static function get($url,$callback){
+        self::$routes['GET'][$url]=$callback;
+
+
+
+    }
+    public static function post($url,$callback){
+        self::$routes['POST'][$url]=$callback;
+
+
+    }
+    public function put(){
+
+    }
+    public function delete(){
+
     }
 
-    private function addHandler(string $method, string  $path, $handler)
-    {
-        $this->handlers[$method . $path] = [
-            'path'    => $path,
-            'method'  => $method,
-            'handler' => $handler
-        ];
-    }
+    public  function executeRoute(){
+     
+       
+        $route=$this->request->getRoute();
+        $method=$this->request->getRequestMethod();
+            $callback=self::$routes[$method][$route];
 
-    public function notFoundHandler($handler)
-    {
-        $this->notFoundHandler = $handler;
-    }
-
-    public function run()
-    {
-        $requestUri  = parse_url($_SERVER['REQUEST_URI']);
-        $requestPath = $requestUri['path'];
-        $method      = $_SERVER['REQUEST_METHOD'];
-
-        $callback = null;
-
-        foreach ($this->handlers as $handler)
-        {
-            if ($handler['path'] === $requestPath && $handler['method'] === $method)
+        
+        
+            if(isset($callback))
             {
-                $callback = $handler['handler'];
+                if(is_array($callback))
+                {
+                    $callback[0]=new $callback[0];
+                }
+
+                call_user_func($callback);
             }
-        }
-
-        if (is_array($callback)){
-            $className = array_shift($callback);
-            $handler = new $className;
-
-            $method = array_shift($callback);
-            $callback = [$handler,$method];
-        }
-
-        if (!$callback) {
-            if (!empty($this->notFoundHandler)) {
-                $callback = $this->notFoundHandler;
+            else {
+                echo "page not found";
             }
-        }
 
-        call_user_func_array($callback, [array_merge($_GET,$_POST)]);
+
+
     }
+
+    public function view($v,$params){
+
+        require_once __DIR__."/../views/$v.php";
+
+    }
+ 
+
 }
 ?>

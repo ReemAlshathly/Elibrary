@@ -1,16 +1,11 @@
 {
-    "name": "lenovo/e-library-php-mvc-master",
-    "autoload": {
-        "psr-4": {
-            "App\\Controllers\\": "app/controllers/",
-            "App\\System\\": "app/system/"
-        }
-    },
-    "authors": [
-        {
-            "name": "afnanalkadasi",
-            "email": "afnanalkadasi22@gmail.com"
-        }
-    ],
-    "require": {}
+  
+  "autoload": {
+    "psr-4": {
+      "coding\\": "./"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.4"
+  }
 }
